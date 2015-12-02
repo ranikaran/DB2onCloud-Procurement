@@ -17,7 +17,7 @@ To test a node, execute the appropriate script by following the below steps:
 - unzip master.zip
 - cd DB2onCloud-Procurement-master
 - To execute the scripts for baremetal machine , cd DB2onCloudBM
-  To execute the scripts for CCI, cd DB2onCloudCCI
+- To execute the scripts for CCI, cd DB2onCloudCCI
 - Then run the scripts with appropriate plan name 
     bash DB2onCloud_XL.bash  
 
