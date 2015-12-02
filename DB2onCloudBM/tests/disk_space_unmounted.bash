@@ -16,7 +16,8 @@ preflight_test () {
     else
         output_ok "'$procured_number_of_disks' Data Disks Found"
     fi
-disktype="ssd"
+#disktype="ssd"
+disktype="disk"
     for x in $(lsblk -b | grep -v sda | grep part | awk '{ print $7 }' | grep $disktype ); do
        output_ok "Disk Type :  + $x "
     done
@@ -24,8 +25,8 @@ disktype="ssd"
        output_fail " Disk Type does not match! "
     fi
     y=1
-#    for x in $(lsblk -b | grep -v sda | grep part | awk '{ print $4 }'); do 
-     for x in $(df -h | grep -v sda | grep ssd | awk '{ print $2 }'); do 
+    for x in $(lsblk -b | grep -v sda | grep part | awk '{ print $4 }'); do 
+#     for x in $(df -h | grep -v sda | grep disk | awk '{ print $2 }'); do 
         if [ $y -gt 0 ]; then
            procured_size1=$x
            y=0
@@ -57,3 +58,4 @@ disktype="ssd"
 
 
 }
+

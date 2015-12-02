@@ -1,28 +1,29 @@
 #!/bin/bash
 
 # CPU number of cores
-PF_BI_NUM_CORES=24
+PF_BI_NUM_CORES=64
 export PF_BI_NUM_CORES
 
 # CPU type
-PF_BI_CPU_TYPE="E5-2620"
+PF_BI_CPU_TYPE="E5-4650"
 export PF_BI_CPU_TYPE
 
 # RAM (MB)
-PF_BI_RAM=131702
+PF_BI_RAM=1048576
 export PF_BI_RAM
-MEMORY_RANGE=117965
+MEMORY_RANGE=943718
 export MEMORY_RANGE
 
 # Num of data disks, set 0 for management nodes
 NUM_DATA_DISKS=2
 export NUM_DATA_DISKS
-#NUM_DATA_SIZE1 for SSD1 in TB
-NUM_DATA_SIZE1="4T"
+#NUM_DATA_SIZE1 for disk1 in bytes
+NUM_DATA_SIZE1=10995116277760
 export NUM_DATA_SIZE1
-#NUM_DATA_SIZE2 for SSD2 in GB
-NUM_DATA_SIZE2="800G"
+#NUM_DATA_SIZE2 for disk2 in bytes
+NUM_DATA_SIZE2=858993459200
 export NUM_DATA_SIZE2
+
 
 # Operating System and its version
 PF_BI_OS=RHEL

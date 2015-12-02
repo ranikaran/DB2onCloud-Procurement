@@ -17,13 +17,14 @@ preflight_test () {
        output_fail "Memory ($assignedValue/$procuredValue MB)"
 
     elif [ $procuredValue -eq $assignedValue ]; then
-	output_ok "Memory procured with $procuredValue vs assigned $assignedValue"
-
-    elif [ $procuredValue -gt $memoryRange ] && [ $procuredValue -lt $assignedValue ]; then    
         output_ok "Memory procured with $procuredValue vs assigned $assignedValue"
-   
-    else 
-	output_fail "Memory ($assignedValue/$procuredValue MB)"
+
+    elif [ $procuredValue -gt $memoryRange ] && [ $procuredValue -lt $assignedValue ]; then
+
+        output_ok "Memory procured with $procuredValue vs assigned $assignedValue"
+
+    else
+        output_fail "Memory ($assignedValue/$procuredValue MB)"
     fi
 
 }

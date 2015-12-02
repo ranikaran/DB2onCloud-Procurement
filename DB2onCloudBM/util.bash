@@ -43,3 +43,4 @@ color_text () {
 exit_now () {
   exit $success
 }
+

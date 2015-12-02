@@ -9,7 +9,7 @@ osv=$3
   then
     ver=$(cat /etc/redhat-release | awk '{print $7}')
     output_ok "Operating System : RHEL"
-    if [ "$ver" == "$osv" ]; then  
+    if [ "$ver" == "$osv" ]; then
       output_ok "OS Version : $ver "
     fi
   else
