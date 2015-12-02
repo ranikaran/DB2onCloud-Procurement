@@ -11,7 +11,7 @@ This repo contains bash scripts to test that a server meets minimum requirements
 
 To test a node, execute the appropriate script by following the below steps:
 - Download the entire script folder as zip and execute it locally
-- ssh to the procured machine
+- ssh to the procured server
 - cd /tmp
 - wget https://github.com/ranikaran/DB2onCloud-Procurement/archive/master.zip
 - unzip master.zip
